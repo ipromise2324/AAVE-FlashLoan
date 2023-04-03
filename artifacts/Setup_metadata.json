@@ -1,0 +1,172 @@
+{
+	"compiler": {
+		"version": "0.8.16+commit.07a7930e"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [],
+				"name": "flashloan",
+				"outputs": [
+					{
+						"internalType": "contract Flashloan",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "ktoken",
+				"outputs": [
+					{
+						"internalType": "contract KToken",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "loaner",
+				"outputs": [
+					{
+						"internalType": "contract Loaner",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_receive",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_amount",
+						"type": "uint256"
+					}
+				],
+				"name": "runLoaner",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/aave/Setup.sol": "Setup"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"@openzeppelin/contracts/token/ERC20/ERC20.sol": {
+			"keccak256": "0x4ffc0547c02ad22925310c585c0f166f8759e2648a09e9b489100c42f15dd98d",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://15f52f51413a9de1ff191e2f6367c62178e1df7806d7880fe857a98b0b66253d",
+				"dweb:/ipfs/QmaQG1fwfgUt5E9nu2cccFiV47B2V78MM1tCy1qB7n4MsH"
+			]
+		},
+		"@openzeppelin/contracts/token/ERC20/IERC20.sol": {
+			"keccak256": "0x9750c6b834f7b43000631af5cc30001c5f547b3ceb3635488f140f60e897ea6b",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://5a7d5b1ef5d8d5889ad2ed89d8619c09383b80b72ab226e0fe7bde1636481e34",
+				"dweb:/ipfs/QmebXWgtEfumQGBdVeM6c71McLixYXQP5Bk6kKXuoY4Bmr"
+			]
+		},
+		"@openzeppelin/contracts/token/ERC20/extensions/IERC20Metadata.sol": {
+			"keccak256": "0x8de418a5503946cabe331f35fe242d3201a73f67f77aaeb7110acb1f30423aca",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://5a376d3dda2cb70536c0a45c208b29b34ac560c4cb4f513a42079f96ba47d2dd",
+				"dweb:/ipfs/QmZQg6gn1sUpM8wHzwNvSnihumUCAhxD119MpXeKp8B9s8"
+			]
+		},
+		"@openzeppelin/contracts/utils/Context.sol": {
+			"keccak256": "0xe2e337e6dde9ef6b680e07338c493ebea1b5fd09b43424112868e9cc1706bca7",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://6df0ddf21ce9f58271bdfaa85cde98b200ef242a05a3f85c2bc10a8294800a92",
+				"dweb:/ipfs/QmRK2Y5Yc6BK7tGKkgsgn3aJEQGi5aakeSPZvS65PV8Xp3"
+			]
+		},
+		"contracts/aave/Flashloan.sol": {
+			"keccak256": "0xa271d7ba9f87429a3cf300d00b79eace7b8531d773e6f24ce480db8738295555",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://54df56ee5be326da5ccdf6ac9226afc6230027560f863e559042bf52365646a7",
+				"dweb:/ipfs/QmNZZcCYKnVKvxrPPpwK47drZn7P8U28pnYozHsPCQaC2R"
+			]
+		},
+		"contracts/aave/KToken.sol": {
+			"keccak256": "0x34af74e864513fdfb5874a235f93ce5699936e0dd2fefc55ed01bbee115384cb",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://022f1aaea42e01e307521a5e54ffafa545be3bcdff2536bc4c037a33a455549f",
+				"dweb:/ipfs/QmV7Him85KPxZN2HGbEEHxRqCoLuiLVuZ34aFb5whNjsbQ"
+			]
+		},
+		"contracts/aave/Loaner.sol": {
+			"keccak256": "0xa12af85a71b83d1b80da014161dde3c0335337e7cb26f2c7e0329ff1c6339e3a",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://dfce8b045ed4962720eef274eaf6fa8fc1921fe0168730d49fcc4d360723b102",
+				"dweb:/ipfs/QmSXAe9fpFyMMbq4J4rYB1A3hdfBU5864UyhdbVyRt8c8k"
+			]
+		},
+		"contracts/aave/Setup.sol": {
+			"keccak256": "0xda6e94a059f093fff2e4bd745731b8cc0d3aee94c757b3a51db4ba6e7ca32f01",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://40428067a44fa2b37941b5002b135b49150626d76f9dfa718d3da057f6fe8044",
+				"dweb:/ipfs/QmUHLhAvd9NWknEAZhU9iDBw87ZJ2fvxULjrAbWKLrkCP6"
+			]
+		},
+		"hardhat/console.sol": {
+			"keccak256": "0x60b0215121bf25612a6739fb2f1ec35f31ee82e4a8216c032c8243d904ab3aa9",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://6e29880d33dd479bb046ba306993d26ccb779a4b1d94a046cb3567f22948bb4d",
+				"dweb:/ipfs/QmfTY1qzPt5C63Wc7y6JqfZr5899NRvXYdCpyLzR5FXQic"
+			]
+		}
+	},
+	"version": 1
+}
